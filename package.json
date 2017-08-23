@@ -1,0 +1,22 @@
+{
+  "name": "morgan-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon app.js",
+    "start:prod": "pm2 start app.js --name api",
+    "update": "pm2 update"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-winston": "^2.4.0",
+    "moment": "^2.18.1",
+    "read-yaml": "^1.1.0",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  }
+}
